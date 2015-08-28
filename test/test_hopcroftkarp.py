@@ -24,9 +24,3 @@ class Tester(unittest.TestCase):
         max_matching = hk.maximum_matching()
         self.assertTrue(max_matching == {1: 'a', 'a': 1, 3: 'c', 'c': 3, 6: 'd', 'd': 6, 8: 'h', 'h': 8} or
                         max_matching == {3: 'a', 'a': 3, 1: 'c', 'c': 1, 6: 'd', 'd': 6, 8: 'h', 'h': 8}, 'maximum matching is incorrect')
-
-
-
-if __name__ == 'main':
-     unittest.main()
-
