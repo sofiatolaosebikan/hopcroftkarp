@@ -1,3 +1,7 @@
+# Hopcroft-Karp Algorithm - finds a maximum matching in bipartite graphs
+# Implemented on the 23rd April 2015 by Sofiat Olaosebikan, AIMS-Ghana
+# Pseudo code gotten from http://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm
+
 # Copyright (c) 2015, Sofiat Olaosebikan. All Rights Reserved
 
 # This program is free software: you can redistribute it and/or modify
