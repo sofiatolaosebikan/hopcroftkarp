@@ -2,13 +2,12 @@ Python Implementation of HopcroftKarp's Algorithm
 ================================================
 
 hopcroftkarp is a library based on Hopcroft Karp's Algorithm.
- 
 It takes as input an unweighted bipartite graph.
 It outputs a maximum matching of the graph.
 
 Pseudo code gotten from http://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm
         
-.. Since an unweighted bipartite graph might have more than one maximum matchings.
+Since an unweighted bipartite graph might have more than one maximum matchings.
 It is worth noting that the algorithm can output any of the maximum matching.
         
 Example
