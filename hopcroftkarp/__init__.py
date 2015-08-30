@@ -118,7 +118,8 @@ class HopcroftKarp(object):
 
             # the maximal set of vertex-disjoint augmenting path and parent dictionary
             # has to be cleared each time the while loop runs
-            self._dfs_paths.clear()
+            # self._dfs_paths.clear() - .clear() and .copy() attribute works for python 3.3 and above
+            del self._dfs_paths[:]
             self._dfs_parent.clear()
 
             for vertex in free_vertex:  # O(m) - every vertex considered once, each edge considered once
@@ -138,3 +139,5 @@ class HopcroftKarp(object):
                         self._matching[path[i]] = path[i+1]
                         self._matching[path[i+1]] = path[i]
         return self._matching
+
+
