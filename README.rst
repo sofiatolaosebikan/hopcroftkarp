@@ -3,7 +3,8 @@ Python Implementation of HopcroftKarp's Algorithm
 
 hopcroftkarp is a library based on Hopcroft Karp's Algorithm. It takes as input a bipartite graph and produces a maximum cardinality matching as output. Since a bipartite graph might have more than one maximum matchings. It is worth noting that the algorithm can output any of the maximum matching.
 
-Pseudo code gotten from .. url:: https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm
+Pseudo code gotten from 
+.. url:: https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algorithm
         
 
         
