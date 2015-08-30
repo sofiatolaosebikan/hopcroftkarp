@@ -8,7 +8,7 @@ Pseudo code gotten from https://en.wikipedia.org/wiki/Hopcroft%E2%80%93Karp_algo
 
         
 Example
----------
+~~~~~~~
 
 .. image:: https://github.com/sofiat-olaosebikan/hopcroftkarp/blob/master/image/bipartite_graph.png
   
@@ -23,7 +23,7 @@ Example
 		
 		
 Installation
---------------
+~~~~~~~~~~~~
 
 Simply execute
 
