@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='hopcroftkarp',
-      version='1.2.3',
+      version='1.2.3.1',
       description='Implementation of HopcroftKarp\'s algorithm',
       long_description='{0:s}'.format(open('README.rst').read()),
       author='Sofiat Olaosebikan',
