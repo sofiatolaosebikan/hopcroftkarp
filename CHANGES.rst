@@ -1,7 +1,9 @@
 HopcroftKarp Changelog
 ======================
 
+
 1.2.4 (27-10-2015)
+==================
 
 - Fixed complete bipartite graph bug [#1]
 
