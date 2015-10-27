@@ -28,7 +28,7 @@ Simply execute
 
 .. code::
 
-    easy_install hopcroftkarp
+    pip install hopcroftkarp
 
 
 or from this source distribution, run
