@@ -33,7 +33,8 @@ class HopcroftKarp(object):
         for vertex in self._left:
             for neighbour in graph[vertex]:
                 if neighbour not in graph:
-                    graph[neighbour] = set(vertex)
+                    graph[neighbour] = set()
+                    graph[neighbour].add(vertex)
                 else:
                     graph[neighbour].add(vertex)
 
@@ -141,3 +142,4 @@ class HopcroftKarp(object):
         return self._matching
 
 
+print(HopcroftKarp({'S3': set(['A', 'C', 'B']), 'S2': set(['A', 'C', 'B']), 'S1': set(['A', 'C', 'B'])}).maximum_matching())
