@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(name='hopcroftkarp',
-      version='1.2.3.1',
+      version='1.2.4',
       description='Implementation of HopcroftKarp\'s algorithm',
-      long_description='{0:s}'.format(open('README.rst').read()),
+      long_description='{0:s}'.format(open('README.rst').read(), open('CHANGES.rst').read()),
       author='Sofiat Olaosebikan',
       author_email='sofiat@aims.edu.gh',
       url='https://github.com/sofiat-olaosebikan/hopcroftkarp',
