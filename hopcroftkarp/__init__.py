@@ -140,6 +140,3 @@ class HopcroftKarp(object):
                         self._matching[path[i]] = path[i+1]
                         self._matching[path[i+1]] = path[i]
         return self._matching
-
-
-print(HopcroftKarp({'S3': set(['A', 'C', 'B']), 'S2': set(['A', 'C', 'B']), 'S1': set(['A', 'C', 'B'])}).maximum_matching())
