@@ -108,7 +108,7 @@ class HopcroftKarp(object):
                         return True
         return False
 
-    def maximum_matching(self):
+    def maximum_matching(self, keys_only=False):
         while True:
             layers = self.__bfs()
             # we break out of the whole while loop if the most recent layer added to layers is empty
@@ -139,4 +139,6 @@ class HopcroftKarp(object):
                     if i % 2 == 0:
                         self._matching[path[i]] = path[i+1]
                         self._matching[path[i+1]] = path[i]
+        if keys_only:
+            self._matching = {k:v for k,v in self._matching.items() if k in self._left}
         return self._matching
