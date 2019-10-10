@@ -23,4 +23,13 @@ class Tester(unittest.TestCase):
         hk = HopcroftKarp(graph)
         max_matching = hk.maximum_matching()
         self.assertTrue(max_matching == {1: 'a', 'a': 1, 3: 'c', 'c': 3, 6: 'd', 'd': 6, 8: 'h', 'h': 8} or
-                        max_matching == {3: 'a', 'a': 3, 1: 'c', 'c': 1, 6: 'd', 'd': 6, 8: 'h', 'h': 8}, 'maximum matching is incorrect')
+                        max_matching == {3: 'a', 'a': 3, 1: 'c', 'c': 1, 6: 'd', 'd': 6, 8: 'h', 'h': 8}, 
+                        'maximum matching is incorrect')
+
+    def test_keys_only(self):
+        graph = {'a': {1, 3}, 'c': {1, 3}, 'd': {3, 6}, 'h': {8}}
+        hk = HopcroftKarp(graph)
+        max_matching = hk.maximum_matching(keys_only=True)
+        self.assertTrue(max_matching == {'a': 1, 'c': 3, 'd': 6, 'h': 8} or
+                        max_matching == {'a': 3, 'c': 1, 'd': 6, 'h': 8}, 
+                        'maximum matching is incorrect')
