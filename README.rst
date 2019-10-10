@@ -58,4 +58,5 @@ or from this source distribution, run
     python setup.py install
 
 
-Thanks to: Adam Wood (github.com/adammichaelwood)
+
+Thanks to Adam Wood (github.com/adammichaelwood) for suggesting the keys_only option.
