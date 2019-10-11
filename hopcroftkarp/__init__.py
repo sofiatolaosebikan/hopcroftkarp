@@ -13,6 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+from copy import deepcopy
 
 class HopcroftKarp(object):
     def __init__(self, graph):
@@ -24,21 +25,22 @@ class HopcroftKarp(object):
         self._matching = {}
         self._dfs_paths = []
         self._dfs_parent = {}
-
-        self._left = set(graph.keys())
+        
+        self._graph = deepcopy(graph)
+        self._left = set(self._graph.keys())
         self._right = set()
 
-        for value in graph.values():
+        for value in self._graph.values():
             self._right.update(value)
         for vertex in self._left:
-            for neighbour in graph[vertex]:
-                if neighbour not in graph:
-                    graph[neighbour] = set()
-                    graph[neighbour].add(vertex)
+            for neighbour in self._graph[vertex]:
+                if neighbour not in self._graph:
+                    self._graph[neighbour] = set()
+                    self._graph[neighbour].add(vertex)
                 else:
-                    graph[neighbour].add(vertex)
+                    self._graph[neighbour].add(vertex)
 
-        self._graph = graph
+        
 
     def __bfs(self):
         layers = []
