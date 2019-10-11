@@ -59,4 +59,8 @@ or from this source distribution, run
 
 
 
-Thanks to Adam Wood (github.com/adammichaelwood) for suggesting the keys_only option.
+This project was completed while the author was studying at the African Institute for Mathematical Sciences, Ghana.
+
+Thanks to AIMS-Ghana for the funding. Also, thanks to Prof Nancy Neudauer and Frantisek Hajnovic for the supervision.
+
+Thanks to Adam Wood (github.com/adammichaelwood) for suggesting the keys only option.
