@@ -15,7 +15,7 @@
 
 
 import unittest
-from HopcroftKarp import HopcroftKarp
+from hopcroftkarp import HopcroftKarp
 
 class Tester(unittest.TestCase):
     def test_mainExample(self):
